@@ -1,9 +1,9 @@
 <?php
 
 // configure
-$from = 'Contact form <yourmail@domain.com>';
-$sendTo = 'your@mail.com';
-$subject = 'New message from contact form';
+$from = 'Contact form <resume@github.com>';
+$sendTo = 'adelina_oprea@ymail.com';
+$subject = 'New message from Resume/CV';
 $fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
 $errorMessage = 'There was an error while submitting the form. Please try again later';
@@ -26,7 +26,7 @@ try
         'Reply-To: ' . $from,
         'Return-Path: ' . $from,
     );
-    
+
     mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
