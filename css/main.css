@@ -2301,10 +2301,62 @@ ul.social-links li:last-child a {
   align-items: center;
     flex-wrap: wrap;
 }
-
 .skill-block {
   margin: 0 10px;
 }
 .skill-block > i {
   font-size: 35px;
 }
+
+/* LEGAL page */
+.legal-wrapper {
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*----------- iHaveCookie --------*/
+#gdpr-cookie-message {
+  position:fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: #ffffff;
+  padding-left: 3%;
+}
+
+@media screen and (max-width: 992px) {
+  #gdpr-cookie-message {
+    top: 50px;
+  }
+}
+
+#gdpr-cookie-message a {
+  color:  #9161e0;
+}
+
+#gdpr-cookie-message a:hover {
+  text-decoration: underline;
+}
+
+#gdpr-cookie-message h4 {
+  margin: 0.5em 0;
+}
+
+#gdpr-cookie-message p {
+  margin: 0 0 1em 0;
+}
+
+#gdpr-cookie-message p:last-child {
+}
+
+#gdpr-cookie-message button {
+  padding:5px;
+  /*font-size: 14px;*/
+}
+
+#gdpr-cookie-message button:hover {
+  /* your css here */
+  color: #ffffff;
+}
+/*----------------------------*/
